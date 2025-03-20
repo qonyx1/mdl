@@ -23,7 +23,7 @@ fi
 
 pip install -r ./requirements.txt --quiet
 echo '#!/bin/bash' > /bin/mdl
-echo 'Automatically setting up the /bin/mdl command. Please make sure you ran as sudo.'
+echo 'Automatically setting up the /bin/mdl command..'
 chmod +x /bin/mdl
 echo "python3 $(pwd)/main.py \"\$@\"" >> /bin/mdl
 echo "Created link: $(realpath ./main.py)"
